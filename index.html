@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#183b36" />
+    <meta
+      name="description"
+      content="Meet Grandsell, founded by entrepreneur Nimet Girgin. A woman-led store with everyday finds for your home and family."
+    />
+    <title>Grandsell — A little of everything.</title>
+    <link rel="preconnect" href="https://cdn1.xmlbankasi.com" />
+    <link rel="dns-prefetch" href="https://cdn1.xmlbankasi.com" />
+    <link rel="modulepreload" href="catalog.js" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" type="module"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="announcement">Founded by Nimet Girgin. Family at heart.</div>
+    <div class="header-background">
+      <header class="site-header">
+        <a class="brand" href="#" aria-label="Grandsell home"
+          ><span class="brand-mark" aria-hidden="true">g.</span>grandsell<span
+            class="brand-dot"
+            >.</span
+          ></a
+        >
+        <nav aria-label="Main navigation">
+          <a href="#shop">Explore products</a>
+          <a href="#story">Our story</a>
+        </nav>
+        <button
+          class="cart-trigger"
+          id="open-cart"
+          aria-label="Open cart, 0 items"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            aria-hidden="true"
+          >
+            <path d="M5 7h14l1 14H4L5 7Z" />
+            <path d="M8 9V6a4 4 0 0 1 8 0v3" />
+          </svg>
+          <span class="cart-label">Your bag</span>
+          <span id="cart-count">0</span>
+        </button>
+      </header>
+    </div>
+    <main id="main">
+      <div class="hero-background">
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="eyebrow"><span></span> Welcome to Grandsell</p>
+            <h1 id="hero-title">
+              A little of<br />everything.<br /><em>All in one place.</em>
+            </h1>
+            <p class="hero-description">
+              For your home, your family, and everything in between. Discover
+              everyday finds with Grandsell.
+            </p>
+            <a class="button button-dark" href="#shop"
+              >Explore the collection <span aria-hidden="true">↗</span></a
+            >
+            <p class="hero-footnote">Big on variety. Personal at heart.</p>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="art-ring ring-one"></div>
+            <div class="art-ring ring-two"></div>
+            <span class="art-label label-top">Everyday finds</span>
+            <span class="art-spark spark-one">✳</span>
+            <span class="art-spark spark-two">✳</span>
+            <div class="floating-tile tile-headphones">
+              <svg viewBox="0 0 120 120">
+                <path
+                  d="M25 66V54a35 35 0 0 1 70 0v12"
+                  fill="none"
+                  stroke="#263f3b"
+                  stroke-width="12"
+                />
+                <rect
+                  x="18"
+                  y="55"
+                  width="24"
+                  height="43"
+                  rx="11"
+                  fill="#36594f"
+                />
+                <rect
+                  x="78"
+                  y="55"
+                  width="24"
+                  height="43"
+                  rx="11"
+                  fill="#36594f"
+                />
+                <path
+                  d="M95 89c0 14-16 18-27 18"
+                  fill="none"
+                  stroke="#263f3b"
+                  stroke-width="4"
+                />
+              </svg>
+            </div>
+            <div class="shopping-bag">
+              <div class="bag-handle"></div>
+              <div class="bag-body">
+                <span>grandsell.</span>
+                <small>a little of everything</small>
+                <div class="bag-smile"></div>
+              </div>
+            </div>
+            <div class="floating-tile tile-vase">
+              <svg viewBox="0 0 120 140">
+                <path
+                  d="M60 72V25m0 29L38 31m22 12 23-27"
+                  fill="none"
+                  stroke="#455d34"
+                  stroke-width="3"
+                />
+                <ellipse
+                  cx="35"
+                  cy="27"
+                  rx="10"
+                  ry="19"
+                  transform="rotate(-42 35 27)"
+                  fill="#75915a"
+                />
+                <ellipse
+                  cx="82"
+                  cy="21"
+                  rx="10"
+                  ry="21"
+                  transform="rotate(40 82 21)"
+                  fill="#526e47"
+                />
+                <ellipse cx="59" cy="18" rx="9" ry="17" fill="#91a976" />
+                <path
+                  d="M43 64h34l-4 16c1 10 17 15 17 34 0 17-60 17-60 0 0-19 16-24 17-34z"
+                  fill="#cc7658"
+                />
+                <path
+                  d="M48 90c-6 13-10 23-3 31"
+                  fill="none"
+                  stroke="#e2997e"
+                  stroke-width="5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <span class="art-label label-bottom"
+              >A world to discover <span>↗</span></span
+            >
+            <div class="art-caption">
+              THE EVERYDAY COLLECTION <span>01 / ∞</span>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="store-transition" aria-label="About our store">
+        <div class="value-strip">
+          <ul class="store-values">
+            <li class="store-value">
+              <span class="value-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <rect x="3" y="3" width="7" height="7" rx="2" />
+                  <rect x="14" y="3" width="7" height="7" rx="2" />
+                  <rect x="3" y="14" width="7" height="7" rx="2" />
+                  <rect x="14" y="14" width="7" height="7" rx="2" />
+                </svg>
+              </span>
+              <p><strong>Many departments. One destination.</strong><span>A little of everything, all together.</span></p>
+            </li>
+            <li class="store-value">
+              <span class="value-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20.3 5.7a4.7 4.7 0 0 0-6.6 0L12 7.4l-1.7-1.7a4.7 4.7 0 0 0-6.6 6.6L12 20l8.3-7.7a4.7 4.7 0 0 0 0-6.6Z" />
+                </svg>
+              </span>
+              <p><strong>Woman-led. Family-focused.</strong><span>Founded by Nimet Girgin.</span></p>
+            </li>
+            <li class="store-value">
+              <span class="value-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m12 3 2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5L12 3Z" />
+                </svg>
+              </span>
+              <p><strong>Your next find is just below.</strong><span>Something for your everyday.</span></p>
+            </li>
+          </ul>
+          <a class="collection-cue" href="#shop" aria-label="Browse the collection">
+            <span class="collection-cue-label">Browse the collection</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 4v16m-6-6 6 6 6-6" />
+            </svg>
+          </a>
+        </div>
+      </section>
+      <section class="shop-section" id="shop" aria-labelledby="shop-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Your next find starts here</p>
+            <h2 id="shop-title">Something for every day.</h2>
+          </div>
+          <div class="section-heading-actions">
+            <a class="story-button" href="#story">Go to our story <span aria-hidden="true">↗</span></a>
+            <span class="demo-badge">Our collection</span>
+          </div>
+        </div>
+        <p class="catalog-note">
+          Explore our collection and save your finds to your bag. Prices are in
+          Turkish lira (TRY). Online ordering is not available yet.
+        </p>
+        <div class="catalog-toolbar">
+          <label class="department-picker" for="category-filter">
+            <span>Categories</span>
+            <select id="category-filter" aria-label="Filter products by category">
+              <option value="all">All categories</option>
+            </select>
+          </label>
+          <label class="search-box">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              aria-hidden="true"
+            >
+              <circle cx="10.5" cy="10.5" r="6.5" />
+              <path d="m16 16 5 5" />
+            </svg>
+            <span class="sr-only">Search products, SKU or barcode</span>
+            <input
+              id="product-search"
+              type="search"
+              placeholder="Search products, SKU or barcode"
+              autocomplete="off"
+            />
+          </label>
+        </div>
+        <p
+          class="results-count"
+          id="results-count"
+          role="status"
+          aria-live="polite"
+          tabindex="-1"
+        ></p>
+        <p class="catalog-note" id="search-status" role="status" hidden></p>
+        <div class="product-grid" id="product-grid"></div>
+        <nav class="product-pagination" id="product-pagination" aria-label="Product pages" hidden>
+          <button class="filter" id="previous-products" disabled>Previous</button>
+          <span id="product-page" aria-live="polite"></span>
+          <button class="filter" id="next-products">Next</button>
+        </nav>
+        <div class="empty-state" id="empty-state" hidden>
+          <span aria-hidden="true">⌕</span>
+          <h3>No finds just yet.</h3>
+          <p>Try another search or explore all categories.</p>
+          <button class="button button-dark" id="reset-filters">
+            See all products <span aria-hidden="true">↗</span>
+          </button>
+        </div>
+        <noscript>
+          <p class="noscript-note">
+            Enable JavaScript to browse the collection.
+          </p>
+        </noscript>
+      </section>
+      <section class="story-section" id="story" aria-labelledby="story-title">
+        <div class="story-graphic" aria-hidden="true">
+          <span class="story-orbit"></span>
+          <span class="story-g">g.</span>
+          <span class="story-sticker">Family at<br />the heart.</span>
+        </div>
+        <div class="story-copy">
+          <p class="eyebrow">Meet our founder</p>
+          <h2 id="story-title">
+            Nimet Girgin.<br />Family at heart.
+          </h2>
+          <p>
+            Founded by businesswoman and entrepreneur <strong>Nimet Girgin</strong>,
+            Grandsell brings a little of everything together for your home,
+            your loved ones, and everyday life.
+          </p>
+          <a class="text-link" href="#shop"
+            >Get to know our collection <span aria-hidden="true">↗</span></a
+          >
+        </div>
+      </section>
+    </main>
+    <div class="footer-background">
+      <footer class="site-footer">
+        <div>
+          <a class="brand" href="#" aria-label="Grandsell home"
+            >grandsell<span class="brand-dot">.</span></a
+          >
+          <p>A little of everything. For you and your family.</p>
+        </div>
+        <div class="footer-right">
+          <a href="#shop">Explore products ↗</a>
+          <p>© <span id="year">2026</span> Grandsell · Store preview</p>
+        </div>
+      </footer>
+    </div>
+    <dialog
+      id="product-dialog"
+      aria-labelledby="dialog-title"
+      aria-describedby="dialog-description"
+    >
+      <button
+        class="dialog-close"
+        aria-label="Close product details"
+        id="close-dialog"
+      >
+        ×
+      </button>
+      <div class="dialog-art" id="dialog-art" aria-hidden="true"></div>
+      <div class="dialog-copy">
+        <p class="eyebrow" id="dialog-category"></p>
+        <h2 id="dialog-title"></h2>
+        <p class="dialog-price" id="dialog-price"></p>
+        <p id="dialog-stock"></p>
+        <p id="dialog-identifiers"></p>
+        <div class="add-controls">
+          <div class="quantity-control">
+            <button id="decrease-quantity" aria-label="Decrease quantity">
+              −
+            </button>
+            <output id="product-quantity" aria-live="polite">1</output>
+            <button id="increase-quantity" aria-label="Increase quantity">
+              +
+            </button>
+          </div>
+          <button class="button button-dark" id="add-to-cart">
+            Add to bag <span aria-hidden="true">+</span>
+          </button>
+        </div>
+        <p
+          class="dialog-status"
+          role="status"
+          aria-live="polite"
+          aria-atomic="true"
+        ></p>
+      </div>
+      <div class="dialog-description-panel">
+        <h3>Description</h3>
+        <p id="dialog-description" tabindex="0"></p>
+      </div>
+      <footer class="dialog-footer">
+        <p class="preview-note">
+          * You can save available items to your bag while exploring. Prices and
+          stock are from our catalog; orders and payments are not available yet.
+        </p>
+      </footer>
+    </dialog>
+    <dialog id="cart-dialog" class="cart-dialog" aria-labelledby="cart-title">
+      <div class="cart-heading">
+        <div>
+          <p class="eyebrow">Your everyday finds</p>
+          <h2 id="cart-title">Your bag<span id="cart-heading-count"></span></h2>
+        </div>
+        <button
+          class="dialog-close"
+          id="close-cart"
+          aria-label="Close shopping bag"
+        >
+          ×
+        </button>
+      </div>
+      <div class="cart-items" id="cart-items"></div>
+      <p
+        class="dialog-status"
+        role="status"
+        aria-live="polite"
+        aria-atomic="true"
+      ></p>
+      <div class="cart-empty" id="cart-empty">
+        <span aria-hidden="true">♡</span>
+        <h3>A little room for discovery.</h3>
+        <p>
+          Your bag is empty. Find something you love in our collection.
+        </p>
+        <button class="button button-dark" id="start-browsing">
+          Explore products <span aria-hidden="true">↗</span>
+        </button>
+      </div>
+      <div class="cart-summary" id="cart-summary">
+        <div class="subtotal-row">
+          <span>Subtotal</span>
+          <strong id="cart-subtotal"></strong>
+        </div>
+        <p class="cart-disclaimer">
+          Prices are in Turkish lira (TRY). Shipping and taxes are not calculated. Checkout
+          will be available when Grandsell starts accepting online orders.
+        </p>
+        <button class="button checkout-placeholder" disabled>
+          Checkout coming soon
+        </button>
+        <button class="continue-shopping" id="continue-shopping">
+          Continue exploring <span aria-hidden="true">↗</span>
+        </button>
+      </div>
+      <p id="storage-note" class="storage-note" hidden>
+        Your browser cannot save this bag. It will be available until you close
+        or reload this page.
+      </p>
+    </dialog>
+    <div
+      class="toast"
+      id="toast"
+      role="status"
+      aria-live="polite"
+      aria-atomic="true"
+    ></div>
+  </body>
+</html>
